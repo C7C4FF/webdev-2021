@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+        li { list-style: none}
+        ul {clear: both}
+        li {float: left; color:blue}
+        a:link {float: left; color:blue}
+        #link {color: aqua;}
+        /* #은 id selector . 인라인>아이디>클래스>태그 우선순위*/
+        .header {background-color: aliceblue; overflow: hidden}
+        .footer {background-color: aqua; overflow: hidden}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <ul>
+            <li><a id='link' style="color: red" href="#">메뉴1</a> </li>
+            <li><a href="#">메뉴2</a> </li>
+            <li><a href="#">메뉴3</a> </li>
+        </ul>
+    </div>
+    <div class="main"></div>
+    <div class="footer">
+        <ul>
+            <li>copyright</li>
+        </ul>
+    </div>
+</div>
+<table cellpadding="0" cellspacing="0" border="1" width="100%">
+    <tr>
+        <td>왼쪽 컨텐츠</td>
+        <td align="right">오른쪽 컨텐츠</td>
+    </tr>
+</table>
+</body>
+</html>
